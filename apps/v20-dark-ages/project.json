@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/v20-dark-ages",
         "index": "apps/v20-dark-ages/src/index.html",
@@ -18,7 +20,10 @@
           "apps/v20-dark-ages/src/favicon.ico",
           "apps/v20-dark-ages/src/assets"
         ],
-        "styles": ["apps/v20-dark-ages/src/styles.scss"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+          "apps/v20-dark-ages/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -83,7 +88,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/v20-dark-ages"],
+      "outputs": [
+        "coverage/apps/v20-dark-ages"
+      ],
       "options": {
         "jestConfig": "apps/v20-dark-ages/jest.config.js",
         "passWithNoTests": true
