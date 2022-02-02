@@ -1,0 +1,94 @@
+{
+  "projectType": "application",
+  "root": "apps/v20-dark-ages",
+  "sourceRoot": "apps/v20-dark-ages/src",
+  "prefix": "timesink",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/v20-dark-ages",
+        "index": "apps/v20-dark-ages/src/index.html",
+        "main": "apps/v20-dark-ages/src/main.ts",
+        "polyfills": "apps/v20-dark-ages/src/polyfills.ts",
+        "tsConfig": "apps/v20-dark-ages/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/v20-dark-ages/src/favicon.ico",
+          "apps/v20-dark-ages/src/assets"
+        ],
+        "styles": ["apps/v20-dark-ages/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/v20-dark-ages/src/environments/environment.ts",
+              "with": "apps/v20-dark-ages/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "v20-dark-ages:build:production"
+        },
+        "development": {
+          "browserTarget": "v20-dark-ages:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "v20-dark-ages:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/v20-dark-ages/src/**/*.ts",
+          "apps/v20-dark-ages/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/v20-dark-ages"],
+      "options": {
+        "jestConfig": "apps/v20-dark-ages/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

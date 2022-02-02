@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "v20-dark-ages": "apps/v20-dark-ages",
+    "v20-dark-ages-e2e": "apps/v20-dark-ages-e2e"
+  }
+}

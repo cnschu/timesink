@@ -1,0 +1,28 @@
+{
+  "root": "apps/v20-dark-ages-e2e",
+  "sourceRoot": "apps/v20-dark-ages-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/v20-dark-ages-e2e/cypress.json",
+        "devServerTarget": "v20-dark-ages:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "v20-dark-ages:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/v20-dark-ages-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["v20-dark-ages"]
+}
