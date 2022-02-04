@@ -1,0 +1,10 @@
+<p>
+  <mat-toolbar class="bg-purple-700">   
+    <span>{{ title }}</span>    
+    <span class="flex-auto"></span>
+    <div *ngFor="let menuButton of menuButtons">
+        <timesink-menu-button class="px-2" [content]="menuButton"></timesink-menu-button>
+    </div>
+   
+  </mat-toolbar>
+</p>
