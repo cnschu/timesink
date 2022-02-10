@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "ui": "libs/ui",
+    "ui-e2e": "apps/ui-e2e",
     "v20-dark-ages": "apps/v20-dark-ages",
     "v20-dark-ages-e2e": "apps/v20-dark-ages-e2e"
   }

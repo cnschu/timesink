@@ -1,6 +1,7 @@
-<button mat-button [matMenuTriggerFor]="menu">{{ content.name }}</button>
+<button mat-flat-button [color]="type" [matMenuTriggerFor]="menu">
+  {{ label }}
+</button>
+
 <mat-menu #menu="matMenu">
-  <div *ngFor="let menuEntry of content.entries">
-    <button mat-menu-item>{{ menuEntry }}</button>
-  </div>
+  <button mat-menu-item *ngFor="let entry of entries">{{ entry }}</button>
 </mat-menu>

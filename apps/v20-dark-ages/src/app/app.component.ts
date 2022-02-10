@@ -10,13 +10,14 @@ export class AppComponent {
   title = 'v20-dark-ages';
 
   menuButton: MenuButton = {
-    name: 'test',
+    label: 'test',
     entries: ['entry A', 'entry B', 'entry C', 'entry D'],
   };
 
   menuButtonB: MenuButton = {
-    name: 'hello world 2',
+    label: 'hello world 2',
     entries: ['entry E', 'entry F', 'entry G', 'entry H', 'entry I'],
+    type: 'accent',
   };
 
   menuButtons: MenuButton[] = [this.menuButton, this.menuButtonB];

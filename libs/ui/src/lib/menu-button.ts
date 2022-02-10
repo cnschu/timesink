@@ -1,4 +1,5 @@
 export interface MenuButton {
-  name: string;
   entries: string[];
+  label: string;
+  type?: 'primary' | 'accent' | 'warn';
 }

@@ -1,0 +1,14 @@
+@use './../scss/variables';
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+timesink-menu-button:last-child {
+  margin-right: 0px;
+}

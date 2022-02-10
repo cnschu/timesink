@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { MenuButton } from '../menu-button';
 
 @Component({
   selector: 'timesink-menu-button',
@@ -7,6 +6,7 @@ import { MenuButton } from '../menu-button';
   styleUrls: ['./menu-button.component.scss'],
 })
 export class MenuButtonComponent {
-  @Input()
-  content: MenuButton = { name: '', entries: [] };
+  @Input() label = 'Button';
+  @Input() entries = [''];
+  @Input() type: 'primary' | 'accent' | 'warn' = 'primary';
 }
