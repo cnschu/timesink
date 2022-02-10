@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@timesink/feature-v20-landing-page": [
+        "libs/feature-v20-landing-page/src/index.ts"
+      ],
       "@timesink/ui": ["libs/ui/src/index.ts"]
     }
   },
