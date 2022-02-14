@@ -1,10 +1,21 @@
 import { TestBed } from '@angular/core/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterTestingModule } from '@angular/router/testing';
+import { V20DaHomeComponent } from '@timesink/feature-v20-home';
+import { UiModule } from '@timesink/ui';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [AppComponent],
+      imports: [
+        BrowserAnimationsModule,
+        UiModule,
+        RouterTestingModule.withRoutes([
+          { path: '', component: V20DaHomeComponent },
+        ]),
+      ],
     }).compileComponents();
   });
 
