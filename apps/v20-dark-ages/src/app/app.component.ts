@@ -16,6 +16,7 @@ export class AppComponent {
   characters: V20DaCharacter[];
   characterButton: MenuButton;
   journalButton: MenuButton;
+  expHistoryButton: MenuButton;
   impressumButton: MenuButton;
 
   menuButtons: MenuButton[] = [];
@@ -39,6 +40,11 @@ export class AppComponent {
       entries: [{ label: 'Tagebuch', route: '/journal' }],
     };
 
+    this.expHistoryButton = {
+      label: 'Erfahrungspunkte',
+      entries: [{ label: 'Erfahrungspunkte', route: '/exp-history' }],
+    };
+
     this.impressumButton = {
       label: 'Impressum',
       entries: [{ label: 'Impressum', route: '/impressum' }],
@@ -47,6 +53,7 @@ export class AppComponent {
     this.menuButtons.push(
       this.characterButton,
       this.journalButton,
+      this.expHistoryButton,
       this.impressumButton
     );
   }
