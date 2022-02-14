@@ -15,6 +15,8 @@ export class AppComponent {
 
   characters: V20DaCharacter[];
   characterButton: MenuButton;
+  impressumButton: MenuButton;
+
   menuButtons: MenuButton[] = [];
 
   constructor(private charService: V20DaCharacterServiceService) {
@@ -31,6 +33,11 @@ export class AppComponent {
       }),
     };
 
-    this.menuButtons.push(this.characterButton);
+    this.impressumButton = {
+      label: 'Impressum',
+      entries: [{ label: 'Impressum', route: '/impressum' }],
+    };
+
+    this.menuButtons.push(this.characterButton, this.impressumButton);
   }
 }
