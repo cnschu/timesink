@@ -3,6 +3,7 @@
   "projects": {
     "feature-v20-character-display": "libs/feature-v20-character-display",
     "feature-v20-home": "libs/feature-v20-home",
+    "feature-v20-impressum": "libs/feature-v20-impressum",
     "ui": "libs/ui",
     "ui-e2e": "apps/ui-e2e",
     "v20-dark-ages": "apps/v20-dark-ages",

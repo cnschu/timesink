@@ -19,6 +19,9 @@
         "libs/feature-v20-character-display/src/index.ts"
       ],
       "@timesink/feature-v20-home": ["libs/feature-v20-home/src/index.ts"],
+      "@timesink/feature-v20-impressum": [
+        "libs/feature-v20-impressum/src/index.ts"
+      ],
       "@timesink/ui": ["libs/ui/src/index.ts"]
     }
   },
