@@ -22,6 +22,9 @@
       "@timesink/feature-v20-impressum": [
         "libs/feature-v20-impressum/src/index.ts"
       ],
+      "@timesink/feature-v20-journal": [
+        "libs/feature-v20-journal/src/index.ts"
+      ],
       "@timesink/ui": ["libs/ui/src/index.ts"]
     }
   },
