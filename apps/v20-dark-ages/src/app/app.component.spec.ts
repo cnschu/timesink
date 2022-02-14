@@ -20,12 +20,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('v20-dark-ages');
   });
 
-  it('should render title', () => {
+  it('should render navbar', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome v20-dark-ages'
-    );
+    expect(compiled.querySelector('timesink-navbar')).toBeTruthy();
   });
 });
