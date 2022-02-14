@@ -31,7 +31,7 @@ export class V20DaCharacterServiceService {
         name: 'Ulrich',
         surname: '',
         clan: 'Tremere',
-        imageSrc: undefined,
+        imageSrc: '/assets/ulrich.jpg',
       },
     ];
   }
