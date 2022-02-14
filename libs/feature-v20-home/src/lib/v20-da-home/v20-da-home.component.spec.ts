@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { V20DaHomeComponent } from './v20-da-home.component';
 
 describe('V20DaHomeComponent', () => {
@@ -8,9 +7,8 @@ describe('V20DaHomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ V20DaHomeComponent ]
-    })
-    .compileComponents();
+      declarations: [V20DaHomeComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

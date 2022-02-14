@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { V20DaExpHistoryComponent } from './v20-da-exp-history.component';
 
 describe('V20DaExpHistoryComponent', () => {
@@ -8,9 +7,8 @@ describe('V20DaExpHistoryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ V20DaExpHistoryComponent ]
-    })
-    .compileComponents();
+      declarations: [V20DaExpHistoryComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
