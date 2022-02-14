@@ -22,5 +22,5 @@
       }
     }
   },
-  "tags": ["type:feature\"", "\"scope:v20\"", "\"scope:client"]
+  "tags": ["type:feature", "scope:v20", "scope:client"]
 }
