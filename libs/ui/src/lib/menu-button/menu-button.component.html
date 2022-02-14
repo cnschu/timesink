@@ -1,4 +1,9 @@
-<button mat-flat-button [color]="type" [matMenuTriggerFor]="menu">
+<button
+  mat-flat-button
+  [color]="type"
+  [matMenuTriggerFor]="menu"
+  *ngIf="entries.length > 1 else directButton"
+>
   {{ label }}
 </button>
 
@@ -11,3 +16,13 @@
     {{ entry.label }}
   </button>
 </mat-menu>
+
+<ng-template #directButton>
+  <button
+    mat-flat-button
+    [color]="type"
+    (click)="menuButtonClick(entries[0].route, entries[0].params)"
+  >
+    {{ label }}
+  </button>
+</ng-template>
