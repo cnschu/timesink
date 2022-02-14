@@ -16,6 +16,7 @@ export class AppComponent {
   characters: V20DaCharacter[];
   characterButton: MenuButton;
   journalButton: MenuButton;
+  spotifyButton: MenuButton;
   expHistoryButton: MenuButton;
   impressumButton: MenuButton;
 
@@ -45,6 +46,11 @@ export class AppComponent {
       entries: [{ label: 'Erfahrungspunkte', route: '/exp-history' }],
     };
 
+    this.spotifyButton = {
+      label: 'Spotify-Playlist',
+      entries: [{ label: 'Spotify-Playlist', route: '/spotify-playlist' }],
+    };
+
     this.impressumButton = {
       label: 'Impressum',
       entries: [{ label: 'Impressum', route: '/impressum' }],
@@ -54,6 +60,7 @@ export class AppComponent {
       this.characterButton,
       this.journalButton,
       this.expHistoryButton,
+      this.spotifyButton,
       this.impressumButton
     );
   }

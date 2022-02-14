@@ -5,6 +5,7 @@ import { V20DaExpHistoryComponent } from '@timesink/feature-v20-exp-history';
 import { V20DaHomeComponent } from '@timesink/feature-v20-home';
 import { V20DaImpressumComponent } from '@timesink/feature-v20-impressum';
 import { V20DaJournalComponent } from '@timesink/feature-v20-journal';
+import { V20DaSpotifyPlaylistComponent } from '@timesink/feature-v20-spotify-playlist';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
   },
   { path: 'journal', component: V20DaJournalComponent },
   { path: 'exp-history', component: V20DaExpHistoryComponent },
+  { path: 'spotify-playlist', component: V20DaSpotifyPlaylistComponent },
   {
     path: 'impressum',
     component: V20DaImpressumComponent,
