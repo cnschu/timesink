@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import {
+  V20DaCharacter,
+  V20DaCharacterServiceService,
+} from '@timesink/feature-v20-character-display';
 import { MenuButton } from '@timesink/ui';
 
 @Component({
@@ -9,16 +13,24 @@ import { MenuButton } from '@timesink/ui';
 export class AppComponent {
   title = 'v20-dark-ages';
 
-  menuButton: MenuButton = {
-    label: 'test',
-    entries: ['entry A', 'entry B', 'entry C', 'entry D'],
-  };
+  characters: V20DaCharacter[];
+  characterButton: MenuButton;
+  menuButtons: MenuButton[] = [];
 
-  menuButtonB: MenuButton = {
-    label: 'hello world 2',
-    entries: ['entry E', 'entry F', 'entry G', 'entry H', 'entry I'],
-    type: 'accent',
-  };
+  constructor(private charService: V20DaCharacterServiceService) {
+    this.characters = this.charService.getCharacters();
 
-  menuButtons: MenuButton[] = [this.menuButton, this.menuButtonB];
+    this.characterButton = {
+      label: 'Charaktere',
+      entries: this.characters.map((character) => {
+        return {
+          label: `${character.name} ${character.surname}`,
+          route: '/character',
+          params: [character.surname, character.name],
+        };
+      }),
+    };
+
+    this.menuButtons.push(this.characterButton);
+  }
 }

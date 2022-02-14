@@ -1,1 +1,32 @@
-<p>v20-da-character works!</p>
+<div
+  class="grid grid-cols-12 grid-rows-6 m-7 gap-2"
+  *ngIf="this.character !== undefined; else notFound"
+>
+  <div
+    class="grid grid-cols-2 grid-rows-3 col-span-2 border-2 border-slate-300 border-solid p-2"
+  >
+    <mat-label class="col-start-1 font-bold">Name:</mat-label>
+    {{
+      this.character.surname.trim().length === 0
+        ? '-'
+        : this.character.surname.trim()
+    }}
+    <mat-label class="col-start-1 font-bold">Vorname:</mat-label>
+    {{ this.character.name }}
+    <mat-label class="col-start-1 font-bold">Clan:</mat-label>
+    {{ this.character.clan }}
+  </div>
+
+  <img
+    *ngIf="this.character.imageSrc !== undefined"
+    class="row-1-col-3 row-end-6 col-end-6 img border-2 border-slate-300 border-solid"
+    [src]="this.character.imageSrc"
+    alt="Image of {{ this.character.name }} {{ this.character.surname }}"
+  />
+</div>
+
+<ng-template #notFound>
+  <div class="m-7">
+    <div>Charakter nicht gefunden.</div>
+  </div>
+</ng-template>

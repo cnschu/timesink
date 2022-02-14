@@ -1,11 +1,18 @@
-.grid {
-  display: grid;
+.m-7 {
+  margin: 1.75rem;
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
 
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+  background: rgb(121, 118, 78);
+  background: linear-gradient(
+    90deg,
+    rgba(121, 118, 78, 1) 100%,
+    rgba(235, 237, 231, 1) 0%
+  );
 }

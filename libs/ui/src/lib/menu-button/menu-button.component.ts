@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { MenuButtonEntry } from '../menu-button';
 
 @Component({
   selector: 'timesink-menu-button',
@@ -7,6 +9,16 @@ import { Component, Input } from '@angular/core';
 })
 export class MenuButtonComponent {
   @Input() label = 'Button';
-  @Input() entries = [''];
+  @Input() entries: MenuButtonEntry[] = [{ label: '', route: '' }];
   @Input() type: 'primary' | 'accent' | 'warn' = 'primary';
+
+  constructor(private router: Router) {}
+
+  menuButtonClick(route: string, params: string[] | undefined) {
+    if (!params) {
+      this.router.navigateByUrl(`/${route}`);
+    } else {
+      this.router.navigate([`/${route}`, ...params]);
+    }
+  }
 }

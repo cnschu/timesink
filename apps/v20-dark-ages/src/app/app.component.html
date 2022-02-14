@@ -1,5 +1,9 @@
-<div class="grid grid-cols-1 grid-rows-3">
-  <timesink-navbar title="V20 DA - Darkening Sky" [menuButtons]="menuButtons"></timesink-navbar>
-  <a routerLink="/demo" routerLinkActive="active">First Component</a>
-  <router-outlet></router-outlet>  
+<div class="container">
+  <timesink-navbar
+    title="V20 DA - Darkening Sky"
+    [menuButtons]="menuButtons"
+  ></timesink-navbar>
+  <div class="m-7">
+    <router-outlet></router-outlet>
+  </div>
 </div>

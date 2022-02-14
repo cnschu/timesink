@@ -1,6 +1,6 @@
 <p>
   <mat-toolbar color="primary">
-    <span>{{ title }}</span>
+    <span (click)="navigateHome()">{{ title }}</span>
     <span class="flex-auto"></span>
     <timesink-menu-button
       *ngFor="let menuButton of menuButtons"

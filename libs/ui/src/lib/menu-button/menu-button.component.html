@@ -3,5 +3,11 @@
 </button>
 
 <mat-menu #menu="matMenu">
-  <button mat-menu-item *ngFor="let entry of entries">{{ entry }}</button>
+  <button
+    mat-menu-item
+    *ngFor="let entry of entries"
+    (click)="menuButtonClick(entry.route, entry.params)"
+  >
+    {{ entry.label }}
+  </button>
 </mat-menu>
