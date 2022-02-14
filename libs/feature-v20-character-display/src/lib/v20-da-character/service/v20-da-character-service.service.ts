@@ -17,7 +17,7 @@ export class V20DaCharacterServiceService {
       },
       {
         name: 'Lucretia',
-        surname: '',
+        surname: 'Borgione',
         clan: 'Malkavianerin',
         imageSrc: '/assets/lucretia.jpg',
       },
