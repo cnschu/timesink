@@ -6,6 +6,6 @@ export interface MenuButton {
 
 export interface MenuButtonEntry {
   label: string;
-  route: string;
+  route?: string;
   params?: string[];
 }

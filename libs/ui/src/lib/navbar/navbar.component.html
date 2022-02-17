@@ -1,13 +1,16 @@
-<p>
-  <mat-toolbar color="primary">
-    <span (click)="navigateHome()">{{ title }}</span>
-    <span class="flex-auto"></span>
+<mat-toolbar color="primary">
+  <span (click)="navigateHome()">{{ title }}</span>
+  <span class="flex-auto"></span>
+  <div *ngIf="!isMobile; else mobileMenu">
     <timesink-menu-button
       *ngFor="let menuButton of menuButtons"
       [label]="menuButton.label"
       [entries]="menuButton.entries"
       [type]="menuButton.type !== undefined ? menuButton.type : 'primary'"
-      class="mx-6"
     ></timesink-menu-button>
-  </mat-toolbar>
-</p>
+  </div>
+</mat-toolbar>
+
+<ng-template #mobileMenu>
+  <timesink-menu-button-mobile [menuButtons]="menuButtons"></timesink-menu-button-mobile>
+</ng-template>

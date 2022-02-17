@@ -7,6 +7,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MenuButtonComponent } from './menu-button/menu-button.component';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenuButtonMobileComponent } from './menu-button-mobile/menu-button-mobile.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     BrowserAnimationsModule,
   ],
-  declarations: [NavbarComponent, MenuButtonComponent],
+  declarations: [NavbarComponent, MenuButtonComponent, MenuButtonMobileComponent],
   exports: [NavbarComponent, MatIconModule, MenuButtonComponent],
 })
 export class UiModule {}

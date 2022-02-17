@@ -22,6 +22,8 @@ export class AppComponent {
 
   menuButtons: MenuButton[] = [];
 
+  mobile = false;
+
   constructor(private charService: V20DaCharacterServiceService) {
     this.characters = this.charService.getCharacters();
 

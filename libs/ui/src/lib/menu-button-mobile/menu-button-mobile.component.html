@@ -1,0 +1,17 @@
+<button
+  mat-icon-button
+  [matMenuTriggerFor]="menu"
+  aria-label="Example icon-button with a menu"
+>
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button
+    mat-menu-item
+    *ngFor="let entry of entries"
+    [disabled]="entry.route ? false : true"
+    (click)="menuButtonClick(entry.route, entry.params)"
+  >
+    <span>{{ entry.label }}</span>
+  </button>
+</mat-menu>
