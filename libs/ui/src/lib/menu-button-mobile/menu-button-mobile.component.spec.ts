@@ -1,28 +1,26 @@
-import { CommonModule } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { RouterTestingModule } from '@angular/router/testing';
-import { MenuButtonComponent } from './menu-button.component';
+import { MenuButtonMobileComponent } from './menu-button-mobile.component';
 
-describe('MenuButtonComponent', () => {
-  let component: MenuButtonComponent;
-  let fixture: ComponentFixture<MenuButtonComponent>;
+describe('MenuButtonMobileComponent', () => {
+  let component: MenuButtonMobileComponent;
+  let fixture: ComponentFixture<MenuButtonMobileComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        CommonModule,
-        MatMenuModule,
-        MatButtonModule,
         RouterTestingModule.withRoutes([]),
+        MatMenuModule,
+        MatIconModule,
       ],
-      declarations: [MenuButtonComponent],
+      declarations: [MenuButtonMobileComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MenuButtonComponent);
+    fixture = TestBed.createComponent(MenuButtonMobileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

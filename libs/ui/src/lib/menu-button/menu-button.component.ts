@@ -11,10 +11,13 @@ export class MenuButtonComponent {
   @Input() label = 'Button';
   @Input() entries: MenuButtonEntry[] = [{ label: '', route: '' }];
   @Input() type: 'primary' | 'accent' | 'warn' = 'primary';
+  @Input() isMobile = false;
 
   constructor(private router: Router) {}
 
-  menuButtonClick(route: string, params: string[] | undefined) {
+  menuButtonClick(route: string | undefined, params: string[] | undefined) {
+    if (!route) return;
+
     if (!params) {
       this.router.navigateByUrl(`/${route}`);
     } else {

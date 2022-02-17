@@ -2,7 +2,7 @@
   mat-flat-button
   [color]="type"
   [matMenuTriggerFor]="menu"
-  *ngIf="entries.length > 1 else directButton"
+  *ngIf="entries.length > 1; else directButton"
 >
   {{ label }}
 </button>

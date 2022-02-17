@@ -1,9 +1,9 @@
 <div
-  class="grid grid-cols-12 grid-rows-6 m-7 gap-2"
+  class="grid grid-cols-1 md:grid-cols-12 md:grid-rows-6 gap-4"
   *ngIf="this.character !== undefined; else notFound"
 >
   <div
-    class="grid grid-cols-2 grid-rows-3 col-span-2 border-2 border-slate-300 border-solid p-2"
+    class="grid row-start-1 col-start-1 grid-cols-2 grid-rows-3 md:col-span-2 mt-10"
   >
     <mat-label class="col-start-1 font-bold">Name:</mat-label>
     {{
@@ -19,14 +19,12 @@
 
   <img
     *ngIf="this.character.imageSrc !== undefined"
-    class="row-1-col-3 row-end-6 col-end-6 img border-2 border-black border-solid"
+    class="grid row-start-2 md:row-start-1 md:col-start-3 md:row-end-5 md:col-end-5 border-2 border-black border-solid"
     [src]="this.character.imageSrc"
     alt="Image of {{ this.character.name }} {{ this.character.surname }}"
   />
 </div>
 
 <ng-template #notFound>
-  <div class="m-7">
-    <div>Charakter nicht gefunden.</div>
-  </div>
+  <div>Charakter nicht gefunden.</div>
 </ng-template>
