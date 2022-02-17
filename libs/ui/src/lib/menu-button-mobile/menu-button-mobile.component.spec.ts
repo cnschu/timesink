@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { RouterTestingModule } from '@angular/router/testing';
 import { MenuButtonMobileComponent } from './menu-button-mobile.component';
 
 describe('MenuButtonMobileComponent', () => {
@@ -8,9 +10,13 @@ describe('MenuButtonMobileComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MenuButtonMobileComponent ]
-    })
-    .compileComponents();
+      imports: [
+        RouterTestingModule.withRoutes([]),
+        MatMenuModule,
+        MatIconModule,
+      ],
+      declarations: [MenuButtonMobileComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

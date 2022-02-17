@@ -1,5 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { RouterTestingModule } from '@angular/router/testing';
 import { MenuButtonComponent } from './menu-button.component';
 
 describe('MenuButtonComponent', () => {
@@ -8,9 +11,14 @@ describe('MenuButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MenuButtonComponent ]
-    })
-    .compileComponents();
+      imports: [
+        CommonModule,
+        MatMenuModule,
+        MatButtonModule,
+        RouterTestingModule.withRoutes([]),
+      ],
+      declarations: [MenuButtonComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
