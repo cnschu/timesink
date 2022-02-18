@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { V20EntityPageComponent } from './v20-entity-page.component';
 
 describe('V20EntityPageComponent', () => {
@@ -8,9 +7,8 @@ describe('V20EntityPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ V20EntityPageComponent ]
-    })
-    .compileComponents();
+      declarations: [V20EntityPageComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

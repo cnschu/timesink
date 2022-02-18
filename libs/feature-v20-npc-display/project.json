@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/feature-v20-npc-display",
+  "sourceRoot": "libs/feature-v20-npc-display/src",
+  "prefix": "timesink",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/feature-v20-npc-display"],
+      "options": {
+        "jestConfig": "libs/feature-v20-npc-display/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature-v20-npc-display/src/**/*.ts",
+          "libs/feature-v20-npc-display/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["type:feature", "scope:v20", "scope:client"]
+}

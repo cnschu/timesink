@@ -15,6 +15,10 @@
     {{ this.character.name }}
     <mat-label class="col-start-1 font-bold">Clan:</mat-label>
     {{ this.character.clan }}
+    <mat-label class="col-start-1 font-bold" *ngIf="this.character.apparantAge">
+      Augenscheinliches Alter:
+    </mat-label>
+    {{ this.character.apparantAge }}
   </div>
 
   <img

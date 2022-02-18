@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { V20DaCharacter } from '@timesink/feature-v20-character-display';
+import { V20DaCharacter } from '@timesink/feature-v20-types';
 
 @Component({
   selector: 'timesink-v20-entity-page',

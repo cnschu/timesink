@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { V20DaCharacterServiceService } from './service/v20-da-character-service.service';
-import { V20DaCharacter } from './types/v20-da-character';
+import { V20DaCharacter } from '@timesink/feature-v20-types';
+import { V20DaCharacterService } from './service/v20-da-character.service';
 
 @Component({
   selector: 'timesink-v20-da-character',
@@ -13,7 +13,7 @@ export class V20DaCharacterComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private charService: V20DaCharacterServiceService
+    private charService: V20DaCharacterService
   ) {}
 
   ngOnInit(): void {

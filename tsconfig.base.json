@@ -31,9 +31,13 @@
       "@timesink/feature-v20-journal": [
         "libs/feature-v20-journal/src/index.ts"
       ],
+      "@timesink/feature-v20-npc-display": [
+        "libs/feature-v20-npc-display/src/index.ts"
+      ],
       "@timesink/feature-v20-spotify-playlist": [
         "libs/feature-v20-spotify-playlist/src/index.ts"
       ],
+      "@timesink/feature-v20-types": ["libs/feature-v20-types/src/index.ts"],
       "@timesink/ui": ["libs/ui/src/index.ts"]
     }
   },
