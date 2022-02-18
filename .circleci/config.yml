@@ -1,157 +1,35 @@
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
-version: 2
-
-defaults: &defaults
-  working_directory: ~/repo
-  docker:
-    - image: cimg/node:16.14.0-browsers
-
-set_env: &set_env
-  name: Setup Environment Variables
-  command: |
-    if [[ $CIRCLE_PULL_REQUEST ]]
-    then
-      echo 'Fetching Base Commit from GitHub'
-      echo 'export CIRCLE_PR_NUMBER="${CIRCLE_PR_NUMBER:-${CIRCLE_PULL_REQUEST##*/}}"' >> $BASH_ENV
-      source $BASH_ENV
-      echo "export CIRCLE_PR_BASE_SHA=`curl -s https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/pulls/${CIRCLE_PR_NUMBER} | jq -r '.base.sha'`" >> $BASH_ENV
-      echo 'export AFFECTED_ARGS="--base ${CIRCLE_PR_BASE_SHA}"' >> $BASH_ENV
-    else
-      echo 'Fetching Base Commit from Deploy Cache'
-      if [[ ! -f dist/last-deploy.txt ]]
-      then
-        mkdir dist && git rev-parse HEAD~1 > dist/last-deploy.txt
-      fi
-      echo 'export AFFECTED_ARGS="--base $(cat dist/last-deploy.txt)"' >> $BASH_ENV
-    fi
-    source $BASH_ENV
-    echo $AFFECTED_ARGS
-npm_cache: &npm_cache
-  keys:
-    - node-deps-node16-{{ checksum "package-lock.json" }}
-    # fallback to using the latest cache if no exact match is found
-    - node-deps-node16-
-
-deploy_cache: &deploy_cache
-  key: last-deploy-sha
-
-npm_install: &npm_install
-  name: Install Dependencies
-  command: npm ci
-
+version: 2.1
+orbs:
+  nx: nrwl/nx@1.1.3
+  
 jobs:
-  install:
-    <<: *defaults
+  main:
+    docker:
+      - image: cimg/node:16.14.0-browsers  
     steps:
       - checkout
-      - restore_cache:
-          <<: *npm_cache
-      - run:
-          <<: *npm_install
-      - save_cache:
-          key: node-deps-node16-{{ checksum "package-lock.json" }}
-          paths:
-            - ~/.cache
-            - node_modules
-  lint:
-    <<: *defaults
+      - run: npm install
+      - nx/set-shas
+      - run: npx nx affected --base=$NX_BASE --target=build --parallel=3
+      - run: npx nx affected --base=$NX_BASE --target=test --parallel=2
+  pr:
+    docker:
+      - image: cimg/node:16.14.0-browsers
     steps:
       - checkout
-      - restore_cache:
-          <<: *deploy_cache
-      - run:
-          <<: *set_env
-      - restore_cache:
-          <<: *npm_cache
-      - run: ./node_modules/.bin/nx workspace-lint
-      - run: npx nx affected:lint ${AFFECTED_ARGS} --parallel
-  build:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache:
-          <<: *deploy_cache
-      - run:
-          <<: *set_env
-      - restore_cache:
-          <<: *npm_cache
-      - run: npx nx affected:build -- ${AFFECTED_ARGS} --parallel --configuration production
-      - save_cache:
-          key: build-{{ .Environment.CIRCLE_WORKFLOW_ID }}
-          paths:
-            - dist
-      - store_artifacts:
-          path: dist
-  test:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache:
-          <<: *deploy_cache
-      - run:
-          <<: *set_env
-      - restore_cache:
-          <<: *npm_cache
-      - run: npx nx affected:test -- ${AFFECTED_ARGS}  --parallel=2
-  e2e:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache:
-          <<: *deploy_cache
-      - run:
-          <<: *set_env
-      - restore_cache:
-          <<: *npm_cache
-      - run: npx nx affected:e2e -- ${AFFECTED_ARGS} --configuration production --parallel false -- --headless
-      - store_artifacts:
-          path: dist/cypress
-
-  deploy:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache:
-          <<: *deploy_cache
-      - run:
-          <<: *set_env
-      - restore_cache:
-          <<: *npm_cache
-      - restore_cache:
-          key: build-{{ .Environment.CIRCLE_WORKFLOW_ID }}
-      - run: npx nx affected -- --target deploy ${AFFECTED_ARGS}
-      - run: git rev-parse HEAD > dist/last-deploy.txt
-      - save_cache:
-          key: last-deploy-sha
-          paths:
-            - dist/last-deploy.txt
-
+      - run: npm install
+      - nx/set-shas
+      - run: npx nx affected --base=$NX_BASE --target=build --parallel=3
+      - run: npx nx affected --base=$NX_BASE --target=test --parallel=2
 workflows:
-  version: 2
-  pr_check:
+  build:
     jobs:
-      - install
-      - lint:
-          requires:
-            - install
-      - test:
-          requires:
-            - install
-      - build:
-          requires:
-            - install
-      - e2e:
-          requires:
-            - install
-      - deploy:
+      - main:
           filters:
             branches:
-              only:
-                - main
-          requires:
-            - lint
-            - test
-            - build
-            - e2e
+              only: main
+      - pr:
+          filters:
+            branches:
+              ignore: main
+              
