@@ -94,7 +94,7 @@ jobs:
           <<: *set_env
       - restore_cache:
           <<: *npm_cache
-      - run: npx nx affected:test -- ${AFFECTED_ARGS} --parallel -- --ci --code-coverage
+      - run: npx nx affected:test -- ${AFFECTED_ARGS}  --parallel=2
   e2e:
     <<: *defaults
     steps:
