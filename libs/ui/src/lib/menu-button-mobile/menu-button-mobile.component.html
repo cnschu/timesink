@@ -1,17 +1,38 @@
 <button
   mat-icon-button
-  [matMenuTriggerFor]="menu"
-  aria-label="Example icon-button with a menu"
+  [matMenuTriggerFor]="animals"
+  aria-label="Mobile Menu for the V20 Dark Ages App"
 >
   <mat-icon>more_vert</mat-icon>
 </button>
-<mat-menu #menu="matMenu">
-  <button
-    mat-menu-item
-    *ngFor="let entry of entries"
-    [disabled]="entry.route ? false : true"
-    (click)="menuButtonClick(entry.route, entry.params)"
-  >
-    <span>{{ entry.label }}</span>
-  </button>
+
+<mat-menu #animals="matMenu">
+  <ng-container *ngFor="let button of menuButtons">
+    <button
+      *ngIf="button.entries.length > 1; else directButton"
+      mat-menu-item
+      [mat-menu-trigger-for]="submenu"
+    >
+      {{ button.label }}
+    </button>
+    <ng-template #directButton>
+      <button
+        mat-menu-item
+        (click)="
+          menuButtonClick(button.entries[0].route, button.entries[0].params)
+        "
+      >
+        {{ button.entries[0].label }}
+      </button>
+    </ng-template>
+    <mat-menu #submenu="matMenu">
+      <button
+        mat-menu-item
+        *ngFor="let entry of button.entries"
+        (click)="menuButtonClick(entry.route, entry.params)"
+      >
+        {{ entry.label }}
+      </button>
+    </mat-menu>
+  </ng-container>
 </mat-menu>
