@@ -108,6 +108,26 @@ jobs:
       - run: npx nx affected:e2e -- ${AFFECTED_ARGS} --configuration production --parallel false -- --headless
       - store_artifacts:
           path: dist/cypress
+
+  deploy:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *deploy_cache
+      - run:
+          <<: *set_env
+      - restore_cache:
+          <<: *npm_cache
+      - restore_cache:
+          key: build-{{ .Environment.CIRCLE_WORKFLOW_ID }}
+      - run: yarn affected -- --target deploy ${AFFECTED_ARGS}
+      - run: git rev-parse HEAD > dist/last-deploy.txt
+      - save_cache:
+          key: last-deploy-sha
+          paths:
+            - dist/last-deploy.txt
+
 workflows:
   version: 2
   pr_check:
@@ -125,3 +145,13 @@ workflows:
       - e2e:
           requires:
             - install
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - lint
+            - test
+            - build
+            - e2e
