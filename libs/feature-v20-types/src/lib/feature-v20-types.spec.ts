@@ -7,6 +7,7 @@ describe('featureV20Types', () => {
       name: 'Benjamin',
       surname: 'Vogt',
       imageSrc: undefined,
+      apparantAge: 25,
     };
     expect(entity.name).toEqual('Benjamin');
   });
