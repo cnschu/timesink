@@ -3,4 +3,5 @@ export interface V20DaCharacter {
   surname: string;
   clan: string;
   imageSrc: string | undefined;
+  apparantAge: number | undefined;
 }

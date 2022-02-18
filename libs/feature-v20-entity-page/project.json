@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/feature-v20-entity-page",
+  "sourceRoot": "libs/feature-v20-entity-page/src",
+  "prefix": "timesink",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/feature-v20-entity-page"],
+      "options": {
+        "jestConfig": "libs/feature-v20-entity-page/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature-v20-entity-page/src/**/*.ts",
+          "libs/feature-v20-entity-page/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["type:ui", "scope:v20", "scope:client"]
+}
