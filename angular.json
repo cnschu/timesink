@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "feature-v20-character-display": "libs/feature-v20-character-display",
+    "feature-v20-entity-page": "libs/feature-v20-entity-page",
     "feature-v20-exp-history": "libs/feature-v20-exp-history",
     "feature-v20-home": "libs/feature-v20-home",
     "feature-v20-impressum": "libs/feature-v20-impressum",

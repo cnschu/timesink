@@ -18,6 +18,9 @@
       "@timesink/feature-v20-character-display": [
         "libs/feature-v20-character-display/src/index.ts"
       ],
+      "@timesink/feature-v20-entity-page": [
+        "libs/feature-v20-entity-page/src/index.ts"
+      ],
       "@timesink/feature-v20-exp-history": [
         "libs/feature-v20-exp-history/src/index.ts"
       ],
