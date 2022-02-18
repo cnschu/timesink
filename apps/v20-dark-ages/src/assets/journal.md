@@ -1,6 +1,6 @@
 **Aus dem Reisetagebuch von Karl Friedrich von Klöden:** 
 
-In Rom lernte ich die bezaubernde Lucretia kennen. 
+In Rom lernte ich die bezaubernde [Lucretia](/character/Borgione/Lucretia) kennen. 
 Dort hörte ich Legenden über GOZONNE den Lasombra, welcher mittels eines Rituals die Sonne am Tage löschen wollte. Naja, diese Sonnernfinsternis wurde schon lange von den Mathematikern hervorgesagt. 
 Auch hörte ich davon das eine Reliquie, der Gral von St. Peter, in Valencia gestohlen wurde. 
 Aufgrund einer Vision der bezaubernden Lucretia organisierten wir uns ein Schiff nach Sevillia, um dort ein Unglück zu verhindern. Deus Vult! 
