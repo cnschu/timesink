@@ -14,28 +14,28 @@ export class V20DaCharacterService {
         surname: 'von Klöden',
         clan: 'Ventrue',
         imageSrc: '/assets/karl_friedrich.png',
-        apparantAge: undefined,
+        apparentAge: undefined,
       },
       {
         name: 'Lucretia',
         surname: 'Borgione',
         clan: 'Malkavianerin',
         imageSrc: '/assets/lucretia.jpg',
-        apparantAge: 15,
+        apparentAge: 15,
       },
       {
         name: 'Veronika',
         surname: 'Wanninger',
         clan: 'Toreador',
         imageSrc: '/assets/veronika_wanninger.jpg',
-        apparantAge: undefined,
+        apparentAge: undefined,
       },
       {
         name: 'Ulrich',
         surname: '',
         clan: 'Tremere',
         imageSrc: '/assets/ulrich.jpg',
-        apparantAge: undefined,
+        apparentAge: undefined,
       },
     ];
   }

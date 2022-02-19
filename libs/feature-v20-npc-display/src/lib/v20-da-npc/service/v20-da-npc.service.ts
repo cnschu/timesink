@@ -14,21 +14,21 @@ export class V20DaNpcService {
         surname: '',
         clan: 'Lasombra',
         imageSrc: undefined,
-        apparantAge: undefined,
+        apparentAge: undefined,
       },
       {
         name: 'Nashwa',
         surname: 'bint Mukhtar',
         clan: 'Gangrel',
         imageSrc: undefined,
-        apparantAge: 19,
+        apparentAge: 19,
       },
       {
         name: 'Mansuara',
         surname: 'Vermudez',
         clan: 'Lasombra',
         imageSrc: undefined,
-        apparantAge: 25,
+        apparentAge: 25,
       },
     ];
   }
