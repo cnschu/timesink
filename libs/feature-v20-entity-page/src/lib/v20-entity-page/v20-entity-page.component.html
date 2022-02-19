@@ -1,32 +1,39 @@
 <div
-  class="grid grid-cols-1 md:grid-cols-12 md:grid-rows-6 gap-4"
-  *ngIf="this.character !== undefined; else notFound"
+  class="{{ this.character?.imageSrc ? '' : 'flex flex-row justify-center' }}"
 >
   <div
-    class="grid row-start-1 col-start-1 grid-cols-2 grid-rows-3 md:col-span-2 mt-10"
+    class="grid grid-cols-1 {{
+      this.character?.imageSrc ? 'md:grid-cols-2' : 'md:w-3/6'
+    }} gap-4"
+    *ngIf="this.character !== undefined; else notFound"
   >
-    <mat-label class="col-start-1 font-bold">Name:</mat-label>
-    {{
-      this.character.surname.trim().length === 0
-        ? '-'
-        : this.character.surname.trim()
-    }}
-    <mat-label class="col-start-1 font-bold">Vorname:</mat-label>
-    {{ this.character.name }}
-    <mat-label class="col-start-1 font-bold">Clan:</mat-label>
-    {{ this.character.clan }}
-    <mat-label class="col-start-1 font-bold" *ngIf="this.character.apparantAge">
-      Augenscheinliches Alter:
-    </mat-label>
-    {{ this.character.apparantAge }}
+    <div class="row-span-2 mt-10">
+      <div class="grid grid-cols-2 gap-x-4 md:gap-x-0">
+        <mat-label class="font-bold">Name:</mat-label>
+        {{
+          this.character.surname.trim().length === 0
+            ? '-'
+            : this.character.surname.trim()
+        }}
+        <mat-label class="row-start-2 font-bold">Vorname:</mat-label>
+        {{ this.character.name }}
+        <mat-label class="row-start-3 font-bold">Clan:</mat-label>
+        <div class="row-start-3">{{ this.character.clan }}</div>
+        <mat-label class="row-start-4 font-bold">
+          Augenscheinliches Alter:
+        </mat-label>
+        <div class="row-start-4">
+          {{ this.character.apparentAge ? this.character.apparentAge : '-' }}
+        </div>
+      </div>
+    </div>
+    <img
+      *ngIf="this.character.imageSrc"
+      class="md:col-start-2 border-2 border-black border-solid md:h-2/3"
+      [src]="this.character.imageSrc"
+      alt="Image of {{ this.character.name }} {{ this.character.surname }}"
+    />
   </div>
-
-  <img
-    *ngIf="this.character.imageSrc !== undefined"
-    class="grid row-start-2 md:row-start-1 md:col-start-3 md:row-end-5 md:col-end-5 border-2 border-black border-solid"
-    [src]="this.character.imageSrc"
-    alt="Image of {{ this.character.name }} {{ this.character.surname }}"
-  />
 </div>
 
 <ng-template #notFound>
