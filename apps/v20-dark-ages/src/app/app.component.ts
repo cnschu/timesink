@@ -19,6 +19,7 @@ export class AppComponent {
   expHistoryButton: MenuButton;
   npcs: V20DaCharacter[];
   npcButton: MenuButton;
+  rulesInfoButton: MenuButton;
   impressumButton: MenuButton;
 
   menuButtons: MenuButton[] = [];
@@ -69,6 +70,11 @@ export class AppComponent {
       }),
     };
 
+    this.rulesInfoButton = {
+      label: 'Regel Infos',
+      entries: [{ label: 'Regel Infos', route: '/rules-info' }],
+    };
+
     this.impressumButton = {
       label: 'Impressum',
       entries: [{ label: 'Impressum', route: '/impressum' }],
@@ -80,6 +86,7 @@ export class AppComponent {
       this.expHistoryButton,
       this.spotifyButton,
       this.npcButton,
+      this.rulesInfoButton,
       this.impressumButton
     );
   }
