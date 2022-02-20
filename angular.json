@@ -8,6 +8,7 @@
     "feature-v20-impressum": "libs/feature-v20-impressum",
     "feature-v20-journal": "libs/feature-v20-journal",
     "feature-v20-npc-display": "libs/feature-v20-npc-display",
+    "feature-v20-rule-info": "libs/feature-v20-rule-info",
     "feature-v20-spotify-playlist": "libs/feature-v20-spotify-playlist",
     "feature-v20-types": "libs/feature-v20-types",
     "ui": "libs/ui",
