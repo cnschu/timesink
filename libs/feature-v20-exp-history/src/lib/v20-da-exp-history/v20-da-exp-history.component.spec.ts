@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { UiModule } from '@timesink/ui';
 import { V20DaExpHistoryComponent } from './v20-da-exp-history.component';
 
 describe('V20DaExpHistoryComponent', () => {
@@ -7,6 +8,7 @@ describe('V20DaExpHistoryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [UiModule],
       declarations: [V20DaExpHistoryComponent],
     }).compileComponents();
   });
