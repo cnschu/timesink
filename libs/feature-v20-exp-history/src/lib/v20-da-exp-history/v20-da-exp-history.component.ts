@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './v20-da-exp-history.component.html',
   styleUrls: ['./v20-da-exp-history.component.scss'],
 })
-export class V20DaExpHistoryComponent {}
+export class V20DaExpHistoryComponent {
+  tableHeaders: string[] = ['Datum', 'Veränderung'];
+  tableRows: string[][] = [
+    ['14.02.2022', '+-0'],
+    ['14.02.2022', '+3'],
+  ];
+}

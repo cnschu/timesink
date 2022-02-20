@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { V20DaCharacter } from '../types/v20-da-character';
+import { V20DaCharacter } from '@timesink/feature-v20-types';
 
 @Injectable({
   providedIn: 'root',
 })
-export class V20DaCharacterServiceService {
+export class V20DaCharacterService {
   characters: V20DaCharacter[];
 
   constructor() {
@@ -14,24 +14,28 @@ export class V20DaCharacterServiceService {
         surname: 'von Klöden',
         clan: 'Ventrue',
         imageSrc: '/assets/karl_friedrich.png',
+        apparentAge: undefined,
       },
       {
         name: 'Lucretia',
         surname: 'Borgione',
         clan: 'Malkavianerin',
         imageSrc: '/assets/lucretia.jpg',
+        apparentAge: 15,
       },
       {
         name: 'Veronika',
         surname: 'Wanninger',
         clan: 'Toreador',
         imageSrc: '/assets/veronika_wanninger.jpg',
+        apparentAge: undefined,
       },
       {
         name: 'Ulrich',
         surname: '',
         clan: 'Tremere',
         imageSrc: '/assets/ulrich.jpg',
+        apparentAge: undefined,
       },
     ];
   }

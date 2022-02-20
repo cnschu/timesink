@@ -1,0 +1,41 @@
+<div
+  class="{{ this.character?.imageSrc ? '' : 'flex flex-row justify-center' }}"
+>
+  <div
+    class="grid grid-cols-1 {{
+      this.character?.imageSrc ? 'md:grid-cols-2' : 'md:w-3/6'
+    }} gap-4"
+    *ngIf="this.character !== undefined; else notFound"
+  >
+    <div class="row-span-2 mt-10">
+      <div class="grid grid-cols-2 gap-x-4 md:gap-x-0">
+        <mat-label class="font-bold">Name:</mat-label>
+        {{
+          this.character.surname.trim().length === 0
+            ? '-'
+            : this.character.surname.trim()
+        }}
+        <mat-label class="row-start-2 font-bold">Vorname:</mat-label>
+        {{ this.character.name }}
+        <mat-label class="row-start-3 font-bold">Clan:</mat-label>
+        <div class="row-start-3">{{ this.character.clan }}</div>
+        <mat-label class="row-start-4 font-bold">
+          Augenscheinliches Alter:
+        </mat-label>
+        <div class="row-start-4">
+          {{ this.character.apparentAge ? this.character.apparentAge : '-' }}
+        </div>
+      </div>
+    </div>
+    <img
+      *ngIf="this.character.imageSrc"
+      class="md:col-start-2 border-2 border-black border-solid md:h-2/3"
+      [src]="this.character.imageSrc"
+      alt="Image of {{ this.character.name }} {{ this.character.surname }}"
+    />
+  </div>
+</div>
+
+<ng-template #notFound>
+  <div>Charakter nicht gefunden.</div>
+</ng-template>

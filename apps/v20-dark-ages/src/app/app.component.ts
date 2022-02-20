@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import {
-  V20DaCharacter,
-  V20DaCharacterServiceService,
-} from '@timesink/feature-v20-character-display';
+import { V20DaCharacterService } from '@timesink/feature-v20-character-display';
+import { V20DaNpcService } from '@timesink/feature-v20-npc-display';
+import { V20DaCharacter } from '@timesink/feature-v20-types';
 import { MenuButton } from '@timesink/ui';
 
 @Component({
@@ -18,14 +17,20 @@ export class AppComponent {
   journalButton: MenuButton;
   spotifyButton: MenuButton;
   expHistoryButton: MenuButton;
+  npcs: V20DaCharacter[];
+  npcButton: MenuButton;
   impressumButton: MenuButton;
 
   menuButtons: MenuButton[] = [];
 
   mobile = false;
 
-  constructor(private charService: V20DaCharacterServiceService) {
+  constructor(
+    private charService: V20DaCharacterService,
+    private npcService: V20DaNpcService
+  ) {
     this.characters = this.charService.getCharacters();
+    this.npcs = this.npcService.getNPCs();
 
     this.characterButton = {
       label: 'Charaktere',
@@ -53,6 +58,17 @@ export class AppComponent {
       entries: [{ label: 'Spotify-Playlist', route: '/spotify-playlist' }],
     };
 
+    this.npcButton = {
+      label: 'NPCs',
+      entries: this.npcs.map((npc) => {
+        return {
+          label: `${npc.name} ${npc.surname}`,
+          route: '/npc',
+          params: [npc.surname, npc.name],
+        };
+      }),
+    };
+
     this.impressumButton = {
       label: 'Impressum',
       entries: [{ label: 'Impressum', route: '/impressum' }],
@@ -63,6 +79,7 @@ export class AppComponent {
       this.journalButton,
       this.expHistoryButton,
       this.spotifyButton,
+      this.npcButton,
       this.impressumButton
     );
   }
