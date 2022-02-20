@@ -1,15 +1,15 @@
 <table
   class="border-collapse shadow-2xl table-auto rounded-bl-md rounded-br-md w-full"
 >
-  <tr class="border-b-2 border-black">
+  <tr *ngIf="tableHeaders.length > 0" class="border-b-2 border-black">
     <th
-      class="font-semibold bg-fuchsia-700 first:rounded-tl-md last:rounded-tr-md"
+      class="font-semibold bg-fuchsia-700 first:rounded-tl-md last:rounded-tr-md px-4"
       *ngFor="let header of tableHeaders"
     >
       {{ header }}
     </th>
   </tr>
   <tr *ngFor="let row of tableRows">
-    <td *ngFor="let column of row">{{ column }}</td>
+    <td *ngFor="let column of row" class="px-4">{{ column }}</td>
   </tr>
 </table>

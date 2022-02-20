@@ -34,6 +34,9 @@
       "@timesink/feature-v20-npc-display": [
         "libs/feature-v20-npc-display/src/index.ts"
       ],
+      "@timesink/feature-v20-rule-info": [
+        "libs/feature-v20-rule-info/src/index.ts"
+      ],
       "@timesink/feature-v20-spotify-playlist": [
         "libs/feature-v20-spotify-playlist/src/index.ts"
       ],
