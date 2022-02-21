@@ -15,6 +15,7 @@ export class V20DaNpcService {
         clan: 'Lasombra',
         imageSrc: undefined,
         apparentAge: undefined,
+        position: undefined,
       },
       {
         name: 'Nashwa',
@@ -22,6 +23,7 @@ export class V20DaNpcService {
         clan: 'Gangrel',
         imageSrc: undefined,
         apparentAge: 19,
+        position: undefined,
       },
       {
         name: 'Mansuara',
@@ -29,6 +31,15 @@ export class V20DaNpcService {
         clan: 'Lasombra',
         imageSrc: undefined,
         apparentAge: 25,
+        position: undefined,
+      },
+      {
+        name: 'Gerushah',
+        surname: 'bint Yoav',
+        clan: 'Lasombra',
+        imageSrc: undefined,
+        apparentAge: 50,
+        position: 'Sultana von Sevilla',
       },
     ];
   }
