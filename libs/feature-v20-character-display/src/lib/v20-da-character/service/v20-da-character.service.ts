@@ -15,6 +15,7 @@ export class V20DaCharacterService {
         clan: 'Ventrue',
         imageSrc: '/assets/karl_friedrich.png',
         apparentAge: undefined,
+        position: undefined,
       },
       {
         name: 'Lucretia',
@@ -22,6 +23,7 @@ export class V20DaCharacterService {
         clan: 'Malkavianerin',
         imageSrc: '/assets/lucretia.jpg',
         apparentAge: 15,
+        position: undefined,
       },
       {
         name: 'Veronika',
@@ -29,6 +31,7 @@ export class V20DaCharacterService {
         clan: 'Toreador',
         imageSrc: '/assets/veronika_wanninger.jpg',
         apparentAge: undefined,
+        position: undefined,
       },
       {
         name: 'Ulrich',
@@ -36,6 +39,7 @@ export class V20DaCharacterService {
         clan: 'Tremere',
         imageSrc: '/assets/ulrich.jpg',
         apparentAge: undefined,
+        position: undefined,
       },
     ];
   }
