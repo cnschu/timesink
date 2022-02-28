@@ -1,4 +1,10 @@
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden
+Nachdem wir in der Ganso Dorado untergekommen sind, machten wir uns auf um nach dem Grahl von St. Peter zu suchen, da dieser der einzige Hinweis ist, den wir haben.
+In der Hafenkaschemme Ancla fanden wir Hinweise auf den Dieb, der ein nachtaktiver Ratten austrinkender mittelalter (30-40) spanischer gelehrter mit schwarzem kurzem Haar gewesen sein soll. Wir suchten diesen mann namens [ORDONIO DE TOLEDO](npc/de%20Toledo/Ordonio) in seinem Haus auf. als wir ihn höflich darum baten uns über den Grahl auskunft zu geben, griff er uns hinterrücks an.
+Nachdem wir ihn niedergerungen haben, begannen wir sein Haus nach Beweisen zu durcchsuchen.
+
+
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden
 
 In Rom lernte ich die bezaubernde [Lucretia](/character/Borgione/Lucretia) kennen. 
 Dort hörte ich Legenden über [GOTZON](/npc//Gotzon) den Lasombra, welcher mittels eines Rituals die Sonne am Tage löschen wollte.
