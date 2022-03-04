@@ -11,7 +11,7 @@ export class V20DaNpcService {
     this.npcs = [
       {
         name: 'Gotzon',
-        surname: '',
+        surname: '-',
         clan: 'Lasombra',
         imageSrc: undefined,
         apparentAge: undefined,

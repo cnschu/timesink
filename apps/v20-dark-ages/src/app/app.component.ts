@@ -37,7 +37,9 @@ export class AppComponent {
       label: 'Charaktere',
       entries: this.characters.map((character) => {
         return {
-          label: `${character.name} ${character.surname}`,
+          label: `${character.name} ${
+            character.surname === '-' ? '' : character.surname
+          }`,
           route: '/character',
           params: [character.surname, character.name],
         };
@@ -63,7 +65,7 @@ export class AppComponent {
       label: 'NPCs',
       entries: this.npcs.map((npc) => {
         return {
-          label: `${npc.name} ${npc.surname}`,
+          label: `${npc.name} ${npc.surname === '-' ? '' : npc.surname}`,
           route: '/npc',
           params: [npc.surname, npc.name],
         };
