@@ -41,6 +41,14 @@ export class V20DaNpcService {
         apparentAge: 50,
         position: 'Sultana von Sevilla',
       },
+      {
+        name: 'Ordonio',
+        surname: 'de Toledo',
+        clan: 'Lasombra',
+        imageSrc: undefined,
+        apparentAge: 40,
+        position: undefined,
+      },
     ];
   }
 
