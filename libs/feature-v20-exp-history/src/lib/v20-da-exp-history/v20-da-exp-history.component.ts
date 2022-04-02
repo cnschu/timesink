@@ -10,5 +10,6 @@ export class V20DaExpHistoryComponent {
   tableRows: string[][] = [
     ['14.02.2022', '+3'],
     ['28.02.2022', '+4'],
+    ['21.03.2022', '+5'],
   ];
 }
