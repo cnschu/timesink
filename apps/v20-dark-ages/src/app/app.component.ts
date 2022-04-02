@@ -74,7 +74,20 @@ export class AppComponent {
 
     this.rulesInfoButton = {
       label: 'Regel Infos',
-      entries: [{ label: 'Regel Infos', route: '/rules-info' }],
+      entries: [
+        {
+          label: 'Würfeln & Schwierigkeiten',
+          route: '/rules-info/dice-and-difficulties',
+        },
+        {
+          label: 'Frenzy & Rötschreck',
+          route: '/rules-info/frenzy-and-roetschreck',
+        },
+        {
+          label: 'Roads & Degeneration',
+          route: '/rules-info/roads-and-degeneration',
+        },
+      ],
     };
 
     this.impressumButton = {
