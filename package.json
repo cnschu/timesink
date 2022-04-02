@@ -7,7 +7,10 @@
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'chore: updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'chore: updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'chore: updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +38,8 @@
     "@angular/cli": "^13.3.1",
     "@angular/compiler-cli": "^13.3.1",
     "@angular/language-service": "^13.3.1",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "@nrwl/cli": "^13.9.6",
     "@nrwl/cypress": "^13.9.6",
     "@nrwl/eslint-plugin-nx": "^13.9.6",
@@ -59,6 +64,8 @@
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-cypress": "^2.10.3",
+    "generate-changelog": "^1.8.0",
+    "husky": "^7.0.4",
     "jest": "^27.5.1",
     "jest-preset-angular": "^11.1.1",
     "postcss": "^8.4.5",
