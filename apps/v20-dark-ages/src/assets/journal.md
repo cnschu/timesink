@@ -1,4 +1,10 @@
 ## aus dem Reisetagebuch von Karl Friedrich von Klöden
+ELISHEBA BINT ALIYYAH sagte uns ihre Hilfe zu, und verwies uns auf einige Monströse Diebstäle von Körperteilen.
+Nach unserer Rückkehr nach Sevillia suchten wir das Siechenhaus auf.
+Wir hörten uns die Geschichte von RAOUL an, der uns berichtete wie er sein Auge an einen maskierten verlor.
+Wir erhielten Hinweise auf MOHAMMED ZWEIFINGER.
+
+## aus dem Reisetagebuch von Karl Friedrich von Klöden
 Wir hatten eine Audienz bei [GERUSHAH BINT YOAV](/npc/bint%20Yoav/Gerushah), bei der die Sultana uns mehrfach ihren Dank versicherte und uns bat den Kult auszuheben.
 Wenn wir etwas benötigen sollten, sollen wir uns an [MANSURA VERMUDEZ](/npc/Vermudez/Mansuara) wenden.
 Als weiteren Ansprechpartner in dieser Angelegenheit benannte uns die Sultana HASSAN (ihrem Seher und Thaumaturg).
@@ -6,12 +12,14 @@ HASSAN berichtete uns von einem Gangrel, der vor 400 Jahren gepfählt und unter 
 Der Pflock wurde vor kurzem von unbekannten entfernt, und es besteht die Gefahr das er wieder erwacht.
 HASSAN berichtete von einer Vision des Gangrel, welcher in schwarze Flammen gehüllt durch die Stadt marodiert
 Folgende Fraktionen der Stadt stellte uns HASSAN vor:
+
 - Clan Lasombra
-- Die Ashira (Muslime, geführt von HASSAN)
+- Die Asahira (Muslime, geführt von HASSAN)
 - Die Gangrel (Muslime, geführt von [NASHWA BINT MUKHTAR](/npc/bint%20Mukhtar/Nashwa))
 - ? Die Christen
 - militante Christen
 - Die Cappadozianer (Nekropolis bei Italica, geführt von ELISHEBA BINT ALIYYAH)
+
 Wir entschlossen uns zuerst die Cappadozianer aufzusuchen um weitere Informationen zu gewinnen und reisten nach Italica.
 
 
