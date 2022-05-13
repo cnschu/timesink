@@ -1,11 +1,11 @@
-## aus dem Reisetagebuch von Karl Friedrich von Klöden
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden
 
 ELISHEBA BINT ALIYYAH sagte uns ihre Hilfe zu, und verwies uns auf einige Monströse Diebstäle von Körperteilen.
 Nach unserer Rückkehr nach Sevillia suchten wir das Siechenhaus auf.
 Wir hörten uns die Geschichte von RAOUL an, der uns berichtete wie er sein Auge an einen maskierten verlor.
 Wir erhielten Hinweise auf MOHAMMED ZWEIFINGER.
 
-## aus dem Reisetagebuch von Karl Friedrich von Klöden
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden
 
 Wir hatten eine Audienz bei [GERUSHAH BINT YOAV](/npc/bint%20Yoav/Gerushah), bei der die Sultana uns mehrfach ihren Dank versicherte und uns bat den Kult auszuheben.
 Wenn wir etwas benötigen sollten, sollen wir uns an [MANSURA VERMUDEZ](/npc/Vermudez/Mansuara) wenden.
@@ -19,7 +19,7 @@ Folgende Fraktionen der Stadt stellte uns HASSAN vor:
 - Die Ashirra (Muslime, geführt von HASSAN)
 - Die Gangrel (Muslime, geführt von [NASHWA BINT MUKHTAR](/npc/bint%20Mukhtar/Nashwa))
 - ? Die Christen
-- militante Christen
+- Militante Christen
 - Die Cappadozianer (Nekropolis bei Italica, geführt von ELISHEBA BINT ALIYYAH)
 
 Wir entschlossen uns zuerst die Cappadozianer aufzusuchen um weitere Informationen zu gewinnen und reisten nach Italica.
