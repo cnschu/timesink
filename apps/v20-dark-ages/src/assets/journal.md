@@ -1,6 +1,13 @@
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
+
+Am Hafen suchten wir MAHAMMED ZWEIFINGER auf, und fanden ihn in seinem Heim während er von zwei dämonischen Hunden unter der Führung der maskierten Gestalt angegriffen wurde.
+Es schien so, als wenn er von einer anderen finsteren Gestalt verteidigt wurde, welche sich alsbald als MALEKITH herausstellte.
+MOHAMMED ZWEIFINGER beschrieb die Frau, welche das Ritual durchführen wolle als Frau mit bronzener Haut und vollschwarzen Augen in maurischem Gewand. Der Dämon nannte sie seine Herrin und ASHIQA BINT JIFRI.
+Die Familie der Kappadozianer stellte uns GIOVANNI zur Seite, welcher sich sofort nützlich machen konnte.
+
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden
 
-ELISHEBA BINT ALIYYAH sagte uns ihre Hilfe zu, und verwies uns auf einige Monströse Diebstäle von Körperteilen.
+ELISHEBA BINT ALIYYAH sagte uns ihre Hilfe zu, und verwies uns auf einige Monströse Diebstähle von Körperteilen.
 Nach unserer Rückkehr nach Sevillia suchten wir das Siechenhaus auf.
 Wir hörten uns die Geschichte von RAOUL an, der uns berichtete wie er sein Auge an einen maskierten verlor.
 Wir erhielten Hinweise auf MOHAMMED ZWEIFINGER.
@@ -18,7 +25,6 @@ Folgende Fraktionen der Stadt stellte uns HASSAN vor:
 - Clan Lasombra
 - Die Ashirra (Muslime, geführt von HASSAN)
 - Die Gangrel (Muslime, geführt von [NASHWA BINT MUKHTAR](/npc/bint%20Mukhtar/Nashwa))
-- ? Die Christen
 - Militante Christen
 - Die Cappadozianer (Nekropolis bei Italica, geführt von ELISHEBA BINT ALIYYAH)
 
