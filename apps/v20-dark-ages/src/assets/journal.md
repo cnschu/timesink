@@ -7,7 +7,7 @@ Es brannte ein Lagerhaus am Hafen bei einem Einbruchsversuch.
 Der Onkel des Emirs wurde im Schlaf erstochen.
 Passanten wurden im Christenviertel überfallen.
 Eine Verbrechenswelle herrscht in der Stadt.
-AUf unserem Weg zu HASSAN fanden wir einen RItualplatz mit zwei geopferten Menschen.
+Auf unserem Weg zu HASSAN fanden wir einen RItualplatz mit zwei geopferten Menschen.
 Nach der Untersuchung brannten wir das Haus nieder und folgten einer Spur ins Armenviertel.
 
 
