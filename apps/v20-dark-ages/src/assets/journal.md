@@ -15,7 +15,7 @@ Nach der Untersuchung brannten wir das Haus nieder und folgten einer Spur ins Ar
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
 3 Nächte bis zur Sonnenfinsternis.
 
-Am Hafen suchten wir MAHAMMED ZWEIFINGER auf, und fanden ihn in seinem Heim während er von zwei dämonischen Hunden unter der Führung der maskierten Gestalt angegriffen wurde.
+Am Hafen suchten wir MOHAMMED ZWEIFINGER auf, und fanden ihn in seinem Heim während er von zwei dämonischen Hunden unter der Führung der maskierten Gestalt angegriffen wurde.
 Es schien so, als wenn er von einer anderen finsteren Gestalt verteidigt wurde, welche sich alsbald als MALEKITH herausstellte.
 MOHAMMED ZWEIFINGER beschrieb die Frau, welche das Ritual durchführen wolle als Frau mit bronzener Haut und vollschwarzen Augen in maurischem Gewand. Der Dämon nannte sie seine Herrin und ASHIQA BINT JIFRI.
 Die Familie der Kappadozianer stellte uns BONEFACIO DI GIOVANNI zur Seite, welcher sich sofort nützlich machen konnte.
