@@ -12,6 +12,9 @@ Nach der Untersuchung brannten wir das Haus nieder und folgten einer Spur ins Ar
 An der Grenze zum Armenviertel fanden wir Hinweise auf den Aufenthaltsort von ALFONSO DE LANDA.
 Auch wies man uns darauf hin, das ein italienischer Händler mit einem Schiff und Soldaten angekommen sei. Diese könnten wir vielleicht für unsere Zwecke nutzen.
 Dann hörten wir uns im Armenviertel um, um hier Zeugen zu finden die möglicherweise die Kultisten beobachtet haben könnte.
+Ein ALBERTO stiftete die Armen zum Aufstand an (Maure, schwarze Haare, braqune augen, arbeiterkleidung).
+Um diesen ALBERTO anzulocken sang [Veronika](/character/Wanninger/Veronika) kritische lustige Lieder über die Obrigkeit ([Beispiel für die Lieder](https://www.youtube.com/watch?v=NtLGXc1A2jo)).
+Wir konnten damit ALBERTO aufspüren, der uns ein Lagerhaus verriet, in das er leute "entführte".
 
 
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
