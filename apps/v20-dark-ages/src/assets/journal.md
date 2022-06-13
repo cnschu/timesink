@@ -7,9 +7,11 @@ Es brannte ein Lagerhaus am Hafen bei einem Einbruchsversuch.
 Der Onkel des Emirs wurde im Schlaf erstochen.
 Passanten wurden im Christenviertel überfallen.
 Eine Verbrechenswelle herrscht in der Stadt.
-Auf unserem Weg zu HASSAN fanden wir einen RItualplatz mit zwei geopferten Menschen.
+Auf unserem Weg zu HASSAN fanden wir einen Ritualplatz mit zwei geopferten Menschen.
 Nach der Untersuchung brannten wir das Haus nieder und folgten einer Spur ins Armenviertel.
-
+An der Grenze zum Armenviertel fanden wir Hinweise auf den Aufenthaltsort von ALFONSO DE LANDA.
+Auch wies man uns darauf hin, das ein italienischer Händler mit einem Schiff und Soldaten angekommen sei. Diese könnten wir vielleicht für unsere Zwecke nutzen.
+Dann hörten wir uns im Armenviertel um, um hier Zeugen zu finden die möglicherweise die Kultisten beobachtet haben könnte.
 
 
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
@@ -18,7 +20,7 @@ Nach der Untersuchung brannten wir das Haus nieder und folgten einer Spur ins Ar
 Am Hafen suchten wir MOHAMMED ZWEIFINGER auf, und fanden ihn in seinem Heim während er von zwei dämonischen Hunden unter der Führung der maskierten Gestalt angegriffen wurde.
 Es schien so, als wenn er von einer anderen finsteren Gestalt verteidigt wurde, welche sich alsbald als MALEKITH herausstellte.
 MOHAMMED ZWEIFINGER beschrieb die Frau, welche das Ritual durchführen wolle als Frau mit bronzener Haut und vollschwarzen Augen in maurischem Gewand. Der Dämon nannte sie seine Herrin und ASHIQA BINT JIFRI.
-Die Familie der Kappadozianer stellte uns BONEFACIO DI GIOVANNI zur Seite, welcher sich sofort nützlich machen konnte.
+Die Familie der Kappadozianer stellte uns BONEFACIO DI GIOVANNI DE FLORENCE zur Seite, welcher sich sofort nützlich machen konnte.
 
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden
 
