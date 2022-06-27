@@ -1,9 +1,29 @@
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
+2 Nächte bis zur Sonnenfinsternis.
 
-Am Hafen suchten wir MAHAMMED ZWEIFINGER auf, und fanden ihn in seinem Heim während er von zwei dämonischen Hunden unter der Führung der maskierten Gestalt angegriffen wurde.
+[Lucretia](/character/Borgione/Lucretia) hatte eine weitere Vision, diesmal von dem Erwachen des alten unter der Stadt.
+Die Stimmung in der Stadt scheint angespannt.
+Es brannte ein Lagerhaus am Hafen bei einem Einbruchsversuch.
+Der Onkel des Emirs wurde im Schlaf erstochen.
+Passanten wurden im Christenviertel überfallen.
+Eine Verbrechenswelle herrscht in der Stadt.
+Auf unserem Weg zu HASSAN fanden wir einen Ritualplatz mit zwei geopferten Menschen.
+Nach der Untersuchung brannten wir das Haus nieder und folgten einer Spur ins Armenviertel.
+An der Grenze zum Armenviertel fanden wir Hinweise auf den Aufenthaltsort von ALFONSO DE LANDA.
+Auch wies man uns darauf hin, das ein italienischer Händler mit einem Schiff und Soldaten angekommen sei. Diese könnten wir vielleicht für unsere Zwecke nutzen.
+Dann hörten wir uns im Armenviertel um, um hier Zeugen zu finden die möglicherweise die Kultisten beobachtet haben könnte.
+Ein ALBERTO stiftete die Armen zum Aufstand an (Maure, schwarze Haare, braqune augen, arbeiterkleidung).
+Um diesen ALBERTO anzulocken sang [Veronika](/character/Wanninger/Veronika) kritische lustige Lieder über die Obrigkeit ([Beispiel für die Lieder](https://www.youtube.com/watch?v=NtLGXc1A2jo)).
+Wir konnten damit ALBERTO aufspüren, der uns ein Lagerhaus verriet, in das er leute "entführte".
+
+
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
+3 Nächte bis zur Sonnenfinsternis.
+
+Am Hafen suchten wir MOHAMMED ZWEIFINGER auf, und fanden ihn in seinem Heim während er von zwei dämonischen Hunden unter der Führung der maskierten Gestalt angegriffen wurde.
 Es schien so, als wenn er von einer anderen finsteren Gestalt verteidigt wurde, welche sich alsbald als MALEKITH herausstellte.
 MOHAMMED ZWEIFINGER beschrieb die Frau, welche das Ritual durchführen wolle als Frau mit bronzener Haut und vollschwarzen Augen in maurischem Gewand. Der Dämon nannte sie seine Herrin und ASHIQA BINT JIFRI.
-Die Familie der Kappadozianer stellte uns GIOVANNI zur Seite, welcher sich sofort nützlich machen konnte.
+Die Familie der Kappadozianer stellte uns BONEFACIO DI GIOVANNI DE FLORENCE zur Seite, welcher sich sofort nützlich machen konnte.
 
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden
 
@@ -40,7 +60,7 @@ In der Nacht darauf trafen wir vor unserer Audienz im Elysium ALFONSO DE LANDA, 
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden
 
 Nachdem wir in der Ganso Dorado untergekommen sind, machten wir uns auf um nach dem Grahl von St. Peter zu suchen, da dieser der einzige Hinweis ist, den wir haben.
-In der Hafenkaschemme Ancla fanden wir Hinweise auf den Dieb, der ein nachtaktiver Ratten austrinkender mittelalter (30-40) spanischer Gelehrter mit schwarzem kurzem Haar gewesen sein soll. Wir suchten diesen Mann namens [ORDONIO DE TOLEDO](npc/de%20Toledo/Ordonio) in seinem Haus auf. als wir ihn höflich darum baten uns über den Grahl auskunft zu geben, griff er uns hinterrücks an.
+In der Hafenkaschemme Ancla fanden wir Hinweise auf den Dieb, der ein nachtaktiver Ratten austrinkender mittelalter (30-40) spanischer Gelehrter mit schwarzem kurzem Haar gewesen sein soll. Wir suchten diesen Mann namens [ORDONIO DE TOLEDO](npc/de%20Toledo/Ordonio) in seinem Haus auf. als wir ihn höflich darum baten uns über den Grahl Auskunft zu geben, griff er uns hinterrücks an.
 Nachdem wir ihn niedergerungen haben, begannen wir sein Haus nach Beweisen zu durchsuchen.
 
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden
