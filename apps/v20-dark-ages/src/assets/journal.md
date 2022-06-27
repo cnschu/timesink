@@ -1,4 +1,8 @@
 ## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
+1 Nacht bis zur Sonnefinsternis
+
+
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
 2 Nächte bis zur Sonnenfinsternis.
 
 [Lucretia](/character/Borgione/Lucretia) hatte eine weitere Vision, diesmal von dem Erwachen des alten unter der Stadt.
