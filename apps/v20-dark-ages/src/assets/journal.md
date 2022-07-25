@@ -1,8 +1,8 @@
-## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1200
 1 Nacht bis zur Sonnefinsternis
 
 
-## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1200
 2 Nächte bis zur Sonnenfinsternis.
 
 [Lucretia](/character/Borgione/Lucretia) hatte eine weitere Vision, diesmal von dem Erwachen des alten unter der Stadt.
@@ -21,7 +21,7 @@ Um diesen ALBERTO anzulocken sang [Veronika](/character/Wanninger/Veronika) krit
 Wir konnten damit ALBERTO aufspüren, der uns ein Lagerhaus verriet, in das er leute "entführte".
 
 
-## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1230
+## Aus dem Reisetagebuch von Karl Friedrich von Klöden im Frühjahr des Jahres des Herrn 1200
 3 Nächte bis zur Sonnenfinsternis.
 
 Am Hafen suchten wir MOHAMMED ZWEIFINGER auf, und fanden ihn in seinem Heim während er von zwei dämonischen Hunden unter der Führung der maskierten Gestalt angegriffen wurde.
